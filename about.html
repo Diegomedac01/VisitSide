@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define que el documento es HTML5 -->
+    <meta charset="UTF-8"> <!-- Establece la codificación para caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para dispositivos móviles -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Vincula la hoja de estilos general -->
+    <link rel="stylesheet" href="css/form.css"> <!-- Vincula la hoja de estilos específica para formularios -->
+    <title>VisitSides</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Encabezado principal del sitio -->
+    <header class="banner-container">
+        <!-- Logo del sitio web -->
+        <img src="image/logovisitsyde.png" alt="logovisitsyde" class="logo">
+        <!-- Barra de navegación -->
+        <nav>            
+            <ul>
+                <!-- Enlaces hacia otras páginas del sitio -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>          
+        </nav>
+    </header>
+
+    <!-- Contenido principal del sitio -->
+    <main>
+        <!-- Sección centrada sobre "Quiénes somos" -->
+        <section class="Centrar">
+            <h2>¿Quiénes somos?</h2> <!-- Título principal de la sección -->
+            <p>
+                ¡Bienvenido a nuestra página web! Este proyecto ha sido creado por un alumno de primer año de Desarrollo de Aplicaciones Web, quien está dando sus primeros pasos en el mundo de la programación y diseño web.
+            </p>
+            <p>
+                Aunque esta es una página de prueba, se ha diseñado pensando en los usuarios que buscan servicios relacionados con viajes. Aquí podrás encontrar una variedad de servicios básicos relacionados con el turismo:
+            </p>
+            <!-- Lista con detalles de los servicios -->
+            <ul id="EliminaPuntos">
+                <li>
+                    <h3>Guías de Servicios</h3> <!-- Subtítulo del servicio -->
+                    <p>Explora nuestras guías detalladas de los mejores destinos del mundo, disponibles de forma gratuita. Para esto, visita el apartado de servicios en el menú de navegación.</p>
+                </li>
+                <li>
+                    <h3>Organización de Viajes</h3>
+                    <p>Deja todos los detalles de tu próximo viaje en nuestras manos. Desde la planificación hasta las reservas, lo gestionamos todo.</p>
+                </li>
+            </ul>
+            <p>
+                Gracias por visitar mi proyecto. Espero que lo disfrutes tanto como yo he disfrutado desarrollándolo. ¡Esto es solo el comienzo de mi aventura en el mundo de las aplicaciones web!
+            </p>
+            <!-- Mensaje adicional -->
+            <ul>
+                <p>Si tiene alguna pregunta no dude en rellenar nuestro cuestionario e intentaremos resolver su duda con la mayor apidez posible, gracias.</p>
+            </ul>
+        </section>
+
+        <!-- Sección del formulario de contacto -->
+        <section class="Centrar">
+            <h2>Formulario de Contacto</h2> <!-- Título principal de la sección -->
+            <form action="#" method="post"> <!-- El formulario no se enviará a ninguna paete debido al # -->
+                <label for="email">Correo Electrónico:</label> <!-- Campo para el correo -->
+                <input type="email" id="email" name="email" required> <!-- Entrada obligatoria para el email -->
+
+                <label for="message">Mensaje:</label> <!-- Campo para el mensaje -->
+                <textarea id="message" name="message" rows="4" required></textarea> <!-- Entrada obligatoria para el mensaje, con textarea permite escribir un texto mas largo que el de correo -->
+
+                <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <hr class="línea"> <!-- Línea separadora -->
+        <p>&copy; 2024 VisitSide. Todos los derechos reservados.</p> <!-- Derechos reservados -->
+        <!-- Menú de navegación adicional en el pie -->
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                <li><a href="privacy.html">Política de Privacidad</a></li> <!-- Enlace a la política de privacidad -->
+                <li><a href="terms.html">Términos de Uso</a></li> <!-- Enlace a los términos de uso -->
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

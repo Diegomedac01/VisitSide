@@ -1,0 +1,191 @@
+.container {
+    display: flex; /* Utiliza flexbox para organizar los elementos dentro del contenedor principal */
+    flex-direction: column; /* Coloca los elementos de forma vertical */
+    gap: 1rem; /* Espaciado entre los elementos del contenedor */
+}
+
+/* Colocar el logo a la izquierda y la barra de navegación a la derecha */
+.banner-container {
+    display: flex; /* Usa Flexbox para distribuir el contenido en una fila */
+    align-items: center; /* Centra verticalmente los elementos del banner */
+    justify-content: space-between; /* Coloca el logo a la izquierda y la navegación a la derecha */
+    padding: 2rem 4rem; /* Espaciado interno: 2rem arriba/abajo, 4rem izquierda/derecha */
+    border-bottom: 2px solid #0d0e0d; /* Línea separadora debajo del banner */
+}
+
+.logo {
+    height: 120px; /* Tamaño fijo para el logo */
+}
+
+/* Estilo para la imagen del banner */
+.banner img {
+    width: 100%; /* Hace que el banner ocupe todo el ancho disponible */
+    display: block; /* Elimina espacios blancos debajo de la imagen */
+    max-height: 1000px; /* Establece una altura máxima para evitar banners demasiado altos */
+}
+
+.imagesize {
+    width: 500px; /* Ancho fijo para imágenes en las tablas */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Escala y recorta las imágenes para llenar el contenedor sin deformarlas */
+}
+
+.cuerpo {
+    font-family: Arial, sans-serif; /* Fuente predeterminada para el contenido */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 20px; /* Espaciado interno alrededor del contenido */
+}
+
+.Centrar {
+    width: 80%; /* Define un ancho fijo para centrar el contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+#EliminaPuntos {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina el espaciado izquierdo de la lista */
+    margin: 0 auto; /* Centra la lista dentro del contenedor */
+    text-align: center; /* Centra los elementos dentro de la lista */
+}
+
+#EliminaPuntos li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista de navegación */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    display: flex; /* Organiza los elementos en una fila */
+    gap: 30px; /* Espacio entre cada elemento de la navegación */
+}
+
+nav li {
+    margin: 0px; /* Elimina márgenes entre elementos de la lista */
+}
+
+nav a {
+    color: #40c0bc; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 24px; /* Tamaño del texto */
+    padding: 5px; /* Espaciado interno alrededor del texto */
+}
+
+nav a:hover {
+    background-color: #ddd; /* Cambia el fondo al pasar el ratón por encima */
+}
+
+.template {
+    display: flex; /* Utiliza Flexbox para organizar el contenido principal */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    height: 100vh; /* Altura de toda la ventana del navegador */
+    width: 100vw; /* Ancho de toda la ventana del navegador */
+    overflow-y: hidden; /* Evita el desplazamiento vertical del contenedor principal */
+}
+
+.content {
+    flex-grow: 1; /* El contenedor ocupa todo el espacio disponible */
+    padding: 16px; /* Espaciado interno */
+    display: flex; /* Utiliza Flexbox para organizar los elementos */
+    gap: 20px; /* Espaciado entre elementos */
+    flex-direction: row; /* Coloca los elementos en una fila */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es más grande */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+    background-color: hwb(0 94% 6% / 0.951); /* Fondo blanco con un ligero tono gris */
+}
+
+.content h1 {
+    font-size: 2rem; /* Tamaño de fuente para títulos */
+    padding-bottom: 1rem; /* Espaciado inferior del título */
+    font-weight: bold; /* Estilo en negrita */
+}
+
+.content p {
+    color: #333; /* Texto gris oscuro para mejor contraste */
+    background: #f9f9f9; /* Fondo gris claro para destacar el texto */
+    border-radius: 8px; /* Bordes redondeados para diseño moderno */
+    max-width: 900px; /* Ancho máximo del párrafo */
+    margin-bottom: 20px; /* Espaciado inferior */
+    visibility: visible; /* Asegura que el párrafo sea visible */
+    display: block; /* Configura el párrafo como un bloque */
+}
+
+.content iframe {
+    width: 500px; /* Ancho del iframe */
+    max-width: 500px; /* Ancho máximo del iframe */
+    height: 300px; /* Altura del iframe */
+    border-radius: 8px; /* Bordes redondeados */
+    -webkit-border-radius: 8px; /* Compatibilidad con navegadores basados en Webkit */
+    -moz-border-radius: 8px; /* Compatibilidad con Firefox */
+    -ms-border-radius: 8px; /* Compatibilidad con IE */
+    -o-border-radius: 8px; /* Compatibilidad con navegadores antiguos de Opera */
+}
+
+.footer {
+    display: flex; /* Organiza los elementos dentro del pie de página */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    gap: 1rem; /* Espaciado entre elementos del pie */
+    padding: 1rem; /* Espaciado interno */
+}
+
+.table {
+    border-collapse: collapse; /* Elimina los bordes dobles de las celdas */
+    margin: 25px 0; /* Espaciado superior e inferior de la tabla */
+    font-size: 0.9em; /* Tamaño de fuente */
+    font-family: sans-serif; /* Fuente sans-serif para mejor legibilidad */
+    min-width: 400px; /* Ancho mínimo de la tabla */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidad */
+}
+
+.table thead tr {
+    background-color: #9edfd6; /* Fondo azul claro para el encabezado */
+    color: #ffffff; /* Texto blanco */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: auto; /* Centra el contenido horizontalmente */
+    margin-right: auto; /* Centra el contenido horizontalmente */
+}
+
+.table th {
+    text-align: center; /* Centra el texto de los encabezados */
+}
+
+.table td {
+    text-align: center; /* Centra el texto de las celdas */
+    vertical-align: middle; /* Alinea verticalmente el contenido */
+}
+
+.tamañocolumna {
+    width: 150px; /* Ancho fijo para ciertas columnas */
+}
+
+.línea {
+    border-top: 2px solid black; /* Define una línea superior negra */
+    margin: 0; /* Sin espaciado arriba y abajo de la línea */
+}
+
+.Separacion {
+    padding-left: 2.5rem; /* Espaciado interno a la izquierda */
+}
+
+.Separacion h2 {
+    font-size: 2rem; /* Tamaño de fuente grande para el título */
+    font-weight: bold; /* Texto en negrita */
+    padding-bottom: 1rem; /* Espaciado inferior */
+}
+
+.Separacion p {
+    padding-bottom: 1rem; /* Espaciado inferior de los párrafos */
+}
+
+.Separacion h3 {
+    font-size: 1rem; /* Tamaño de fuente menor para subtítulos */
+    font-weight: bold; /* Texto en negrita */
+    padding-bottom: 1rem; /* Espaciado inferior */
+}
+
+ul {
+    list-style: none; /* Elimina los puntos de las listas */
+}
